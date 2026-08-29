@@ -1,0 +1,35 @@
+//Create a program that returns if the age is underage(minor), legal age or senior citizen.
+
+import java.util.Scanner;
+
+public class ReadAge {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("---AGE VERIFICATION---\n\n");
+
+        System.out.print("Enter name: ");
+        String name = input.nextLine();       
+
+        System.out.print("Enter Age: ");
+        Integer age = input.nextInt();
+
+        System.out.print("\n\n---CLASSIFIED AS---\n\n");
+
+        if (age < 18) {
+            System.out.print("MINOR");
+
+        } else if (age < 60) {
+            System.out.print("LEGAL AGE");
+
+        } else {
+            System.out.print("SENIOR CITIZEN");
+        }
+
+        input.close();
+
+    }
+}
+
