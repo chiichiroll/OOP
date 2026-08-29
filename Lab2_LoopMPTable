@@ -1,0 +1,25 @@
+//Create a program that gets a number from the user and displays a multiplication table using loops.
+
+import java.util.Scanner;
+
+public class MultiplicationTable {
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("---MULTIPLICATION TABLE---\n\n");
+
+        System.out.print("Enter A Number: ");
+        Integer number = input.nextInt();
+
+        System.out.print("\n---MULTIPLICATION TABLE OF " + number + "---\n\n");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number*i));
+        }
+
+        input.close();
+
+    }
+}
