@@ -1,0 +1,39 @@
+public class Work {
+    
+    public static void main(String[] args){
+
+        Food food = new Food();
+        System.out.println(food.color + " " + food.fruit);
+        System.out.println(food.fruit);
+        System.out.println(food.quantity);
+        System.out.println(food.price);
+        System.out.println(food.isEdible);
+
+        System.out.println(food.isEdible);
+        food.choose();
+
+        System.out.println(food.isEdible);
+        food.eat();
+    }
+}
+    
+class Food {
+
+    String color = "yellow";
+    String fruit = "banana";
+    int quantity = 20;
+    double price = 100.00;
+    boolean isEdible = false;
+
+    void choose() {
+        isEdible = false; 
+        System.out.println("Pick another banana.");
+    }   
+
+    void eat() {
+        isEdible = true; 
+        System.out.println("Eat banana.");
+    }   
+    
+}
+
