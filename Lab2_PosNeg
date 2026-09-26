@@ -13,15 +13,12 @@ public class PosNeg {
 
         if (number > 0) {
             System.out.print(number + " is a positive integer.");
-
         } else if (number < 0) {
             System.out.print(number + " is a negative integer.");
-
         } else {
             System.out.print(number + " is a number zero.");
         }
 
         input.close();
-
     }
 }
